@@ -46,7 +46,7 @@ function App() {
     const loader = new GLTFLoader();
     let obj;
     loader.load(
-     '../assets/scene.gltf',
+     '../src/assets/scene.gltf',
       (gltf)=>{
         obj = gltf.scene;
       obj.position.set(1,1,1);
@@ -64,7 +64,7 @@ function App() {
 const loader2 = new GLTFLoader();
 let obj2;
 loader2.load(
- '../assets/Billboard/scene.gltf',
+ '../src/assets/Billboard/scene.gltf',
   (gltf)=>{
     obj2 = gltf.scene;
   obj2.position.set(-4.5, 8.5432859913, -50);
@@ -82,7 +82,7 @@ loader2.load(
 const loader3 = new GLTFLoader();
 let obj3;
 loader3.load(
- '../assets/Billboard/scene.gltf',
+ '../src/assets/Billboard/scene.gltf',
   (gltf)=>{
     obj3 = gltf.scene;
   obj3.position.set(-17, 8.5432859913, -35.1234856);
@@ -100,7 +100,7 @@ loader3.load(
 const loader4 = new GLTFLoader();
 let obj4;
 loader4.load(
- '../assets/About/scene.gltf',
+ '../src/assets/About/scene.gltf',
   (gltf)=>{
     obj4 = gltf.scene;
   obj4.position.set(25, 1.5432859913, -30.1234856);
@@ -116,9 +116,9 @@ loader4.load(
 )
 
 // adding plane which can be act as a banner
-const adminTexture = new THREE.TextureLoader().load('./assets/img/Admin-dashboard-app.jpg');
-const gymTexture = new THREE.TextureLoader().load('./assets/img/gym app1.jpg');
-const aboutTexture = new THREE.TextureLoader().load('./assets/img/aboutMe.jpg')
+const adminTexture = new THREE.TextureLoader().load('../src/assets/img/Admin-dashboard-app.jpg');
+const gymTexture = new THREE.TextureLoader().load('../src/assets/img/gym app1.jpg');
+const aboutTexture = new THREE.TextureLoader().load('../src/assets/img/aboutMe.jpg')
 
 
 // adding the adminBanner planes which act as a banner
@@ -161,7 +161,7 @@ scene.add(aboutMeMesh);
 // adding text models
 let adminObj, gymObj, aboutObj, hiObj, developerObj, projectObj,qObj, eObj, skillObj;
 const adminModel = new GLTFLoader();
-adminModel.load('../assets/fonts/admin/output.gltf.glb',
+adminModel.load('../src/assets/fonts/admin/output.gltf.glb',
 (gltf)=>{
   adminObj = gltf.scene;
   adminObj.position.set(-4.5, 5.58237591, -40);
@@ -175,7 +175,7 @@ undefined,
 })
 
 const gymModel = new GLTFLoader();
-gymModel.load('../assets/fonts/gym/gym-app.glb',
+gymModel.load('../src/assets/fonts/gym/gym-app.glb',
 (gltf)=>{
   gymObj  = gltf.scene;
   gymObj.position.set(-9.7690876785,  7.58237591, -30.1234856);
@@ -191,7 +191,7 @@ undefined,
 )
 
 const projectModel = new GLTFLoader();
-gymModel.load('../assets/fonts/project/project.glb',
+gymModel.load('../src/assets/fonts/project/project.glb',
 (gltf)=>{
   projectObj = gltf.scene;
   projectObj.position.set(-8.7,  3.58237591, -35.1234856);
@@ -205,7 +205,7 @@ undefined,
 })
 
 const aboutModel = new GLTFLoader();
-gymModel.load('../assets/fonts/about/about-me.glb',
+gymModel.load('../src/assets/fonts/about/about-me.glb',
 (gltf)=>{
   aboutObj = gltf.scene;
   aboutObj.position.set(23, 9.9132859913, -32.1234856);
@@ -219,7 +219,7 @@ undefined,
   console.log('cannot');
 })
 const skillModel = new GLTFLoader();
-skillModel.load('../assets/fonts/about/skill.glb',
+skillModel.load('../src/assets/fonts/about/skill.glb',
 (gltf)=>{
   skillObj = gltf.scene;
   skillObj.position.set(23, 9.9132859913, -27.234856);
@@ -233,7 +233,7 @@ undefined,
   console.log('cannot');
 })
 const hiModel = new GLTFLoader();
-gymModel.load('../assets/fonts/hi/hi.glb',
+gymModel.load('../src/assets/fonts/hi/hi.glb',
 (gltf)=>{
   hiObj = gltf.scene;
   hiObj.position.set(9,13.5,-46.5);
@@ -246,7 +246,7 @@ undefined,
   console.log('cannot');
 })
 const developerModel = new GLTFLoader();
-gymModel.load('../assets/fonts/developer/creative.glb',
+gymModel.load('../src/assets/fonts/developer/creative.glb',
 (gltf)=>{
   developerObj = gltf.scene;
   developerObj.position.set(9,12.75,-46.5);
@@ -260,7 +260,7 @@ undefined,
 })
 
 const qModel = new GLTFLoader();
-qModel.load('../assets/fonts/nav/q.glb',
+qModel.load('../src/assets/fonts/nav/q.glb',
 (gltf)=>{
   qObj = gltf.scene;
   qObj.position.set(-3.5, 4.88237591, -40);
@@ -274,7 +274,7 @@ undefined,
 })
 
 const eModel = new GLTFLoader();
-eModel.load('../assets/fonts/nav/e.glb',
+eModel.load('../src/assets/fonts/nav/e.glb',
 (gltf)=>{
   eObj = gltf.scene;
   eObj.position.set(-9.7690876785,  6.88237591, -30.1234856);
